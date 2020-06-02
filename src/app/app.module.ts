@@ -10,6 +10,7 @@ import { DescriptionComponent } from './components/description/description.compo
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './components/services/services.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { WorksComponent } from './components/works/works.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     DescriptionComponent,
     ServicesComponent,
     PortfolioComponent,
+    WorksComponent,
   ],
   imports: [
     BrowserModule,
