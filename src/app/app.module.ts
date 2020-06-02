@@ -12,6 +12,9 @@ import { ServicesComponent } from './components/services/services.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { WorksComponent } from './components/works/works.component';
 import { TeamComponent } from './components/team/team.component';
+import { StoriesComponent } from './components/stories/stories.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { TeamComponent } from './components/team/team.component';
     PortfolioComponent,
     WorksComponent,
     TeamComponent,
+    StoriesComponent,
+    ContactUsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
