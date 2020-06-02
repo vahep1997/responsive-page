@@ -1,7 +1,7 @@
 <div class="container my-5">
   <div class="row">
     <div *ngFor="let work of works" class="col-3 d-flex align-items-center flex-column info-container">
-      <fa-icon [icon]="work.icon"></fa-icon>
+      <fa-icon [icon]="work.icon" class="sky-color"></fa-icon>
       <div class="count">{{work.count}}</div>
       <div class="text-secondary">{{work.text}}</div>
     </div>

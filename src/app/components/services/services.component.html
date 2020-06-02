@@ -3,9 +3,9 @@
 
   <div class="service-container mt-5">
     <div class="service-item" *ngFor="let service of services">
-      <fa-icon [icon]="service.icon"></fa-icon>
+      <fa-icon [icon]="service.icon" class="sky-color"></fa-icon>
       <div class="description">
-        <h4>{{service.title}}</h4>
+        <h4 class="sky-color">{{service.title}}</h4>
         <div>{{service.description}}</div>
       </div>
     </div>

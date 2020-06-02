@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './components/services/services.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { WorksComponent } from './components/works/works.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { WorksComponent } from './components/works/works.component';
     ServicesComponent,
     PortfolioComponent,
     WorksComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,

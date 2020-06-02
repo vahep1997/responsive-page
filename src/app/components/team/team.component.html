@@ -1,0 +1,16 @@
+<div class="bg-color py-5">
+  <div class="container">
+    <h1 class="font-weight-bold">Our Team</h1>
+    <div class="row my-3">
+      <div class="col-3" *ngFor="let worker of team">
+        <div class="card">
+          <img src="{{worker.image}}" class="card-img-top" alt="{{worker.title}}">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold sky-color">{{worker.title}}</h4>
+            <p class="card-text text-uppercase text-secondary fs-13 font-weight-bold">{{worker.position}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
