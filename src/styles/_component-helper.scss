@@ -1,5 +1,8 @@
 @import "./variables";
 
+.main{
+  width: 60%;
+}
 
 .pointer {
   cursor: pointer;
@@ -9,8 +12,16 @@
   background-color: #F9F9F9;
 }
 
+.bg-sky-color {
+  background-color: #2196F3;
+}
+
 .sky-color {
   color: #2196F3;
+}
+
+.fs-12 {
+  font-size: 12px;
 }
 
 .fs-13 {
@@ -21,3 +32,6 @@
   font-size: 14px;
 }
 
+.fs-19 {
+  font-size: 19px;
+}

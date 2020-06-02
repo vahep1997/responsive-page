@@ -1,16 +1,46 @@
 <div class="bg-color py-5">
-  <div class="container">
+  <div class="container main">
     <h1 class="font-weight-bold">Our Team</h1>
     <div class="row my-3">
       <div class="col-3" *ngFor="let worker of team">
         <div class="card">
-          <img src="{{worker.image}}" class="card-img-top" alt="{{worker.title}}">
+          <img src="{{worker.image}}" class="card-img-top" alt="{{worker.name}}">
           <div class="card-body">
-            <h4 class="card-title font-weight-bold sky-color">{{worker.title}}</h4>
-            <p class="card-text text-uppercase text-secondary fs-13 font-weight-bold">{{worker.position}}</p>
+            <div class="card-title font-weight-bold sky-color fs-19">{{worker.name}}</div>
+            <p class="card-text text-uppercase text-secondary fs-12 font-weight-bold">{{worker.position}}</p>
+          </div>
+          <div class="social d-flex">
+            <img src="assets/images/twitter.png" alt="twitter">
+            <img src="assets/images/facebook.png" alt="facebook">
+            <img src="assets/images/ball.png" alt="ball">
+            <img src="assets/images/linkedin.png" alt="linkedin">
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<carousel>
+  <div class="carousel-container bg-sky-color pt-5">
+    <slide *ngFor="let worker of team" >
+      <img src="{{worker.image}}" alt="">
+      <div class="d-flex align-items-center flex-column info-container">
+        <h4 class="font-weight-bold text-white">{{worker.name}}</h4>
+        <div class="text-uppercase text-light fs-13 mb-3">{{worker.position}}</div>
+        <div class="text-white fs-13 text-center">Lorem ipsum, consectetur elit. Non, qui. Nemo rem quod nostrum, qui unde praesentium  adipisicing elit. Non, qui. Nemo rem quod nostrum, qui eos similique! Sapiente!</div>
+      </div>
+    </slide>
+  </div>
+</carousel>
+
+<div class="bg-color">
+  <div class="container main">
+    <div class="row sponsors">
+      <img src="assets/images/sponsor-1.png" class="col-3 px-1" alt="sponsor-1">
+      <img src="assets/images/sponsor-2.png" class="col-3 px-1" alt="sponsor-2">
+      <img src="assets/images/sponsor-3.png" class="col-3 px-1" alt="sponsor-3">
+      <img src="assets/images/sponsor-4.png" class="col-3 px-1" alt="sponsor-4">
     </div>
   </div>
 </div>

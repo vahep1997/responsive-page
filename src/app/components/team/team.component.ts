@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faChartLine, faCommentAlt, faCode, faTv, faGripHorizontal} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-team',
@@ -8,26 +7,25 @@ import { faChartLine, faCommentAlt, faCode, faTv, faGripHorizontal} from '@forta
 })
 export class TeamComponent implements OnInit {
 
-
   public team = [
     {
       image: 'assets/images/team-1.png',
-      title: 'Rob Percy',
+      name: 'Rob Percy',
       position: 'co-founder'
     },
     {
       image: 'assets/images/team-2.png',
-      title: 'Jenifer L.',
+      name: 'Jenifer L.',
       position: 'graffic designer'
     },
     {
       image: 'assets/images/team-3.png',
-      title: 'Tom Hanks',
+      name: 'Tom Hanks',
       position: 'seo specialist'
     },
     {
       image: 'assets/images/team-4.png',
-      title: 'Emma Watson',
+      name: 'Emma Watson',
       position: 'head of ideas'
     },
   ];
