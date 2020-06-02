@@ -1,0 +1,41 @@
+$header-text-color: #2196F3;
+
+.main{
+  width: 60%;
+
+  .description-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    fa-icon {
+      color: $header-text-color;
+      font-size: 26px;
+    }
+    .description-title {
+      color: $header-text-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.bg-color {
+  background-color: #F9F9F9;
+
+  .categories {
+    height: 60px;
+
+    .category-item {
+      width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $header-text-color;
+
+      fa-icon {
+        font-size: 20px;
+      }
+    }
+  }
+}
