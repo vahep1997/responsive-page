@@ -8,6 +8,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { DescriptionComponent } from './components/description/description.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ServicesComponent } from './components/services/services.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     CarouselComponent,
     DescriptionComponent,
+    ServicesComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,

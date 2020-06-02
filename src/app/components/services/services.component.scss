@@ -1,0 +1,27 @@
+$text-color: #2196F3;
+
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+
+  .service-item {
+    display: flex;
+    width: 350px;
+    height: 150px;
+
+    fa-icon {
+      color: $text-color;
+      font-size: 35px;
+    }
+
+    .description {
+      margin-left: 20px;
+
+      h4 {
+        font-weight: bold;
+        color: $text-color;
+      }
+    }
+  }
+}

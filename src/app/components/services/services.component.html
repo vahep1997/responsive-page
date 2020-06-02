@@ -1,0 +1,13 @@
+<div class="container my-4">
+  <h1 class="font-weight-bold">Services</h1>
+
+  <div class="service-container mt-5">
+    <div class="service-item" *ngFor="let service of services">
+      <fa-icon [icon]="service.icon"></fa-icon>
+      <div class="description">
+        <h4>{{service.title}}</h4>
+        <div>{{service.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>
