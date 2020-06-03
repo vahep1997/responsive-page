@@ -21,7 +21,9 @@
   }
 }
 
-.sponsors img{
-  margin: 40px 0;
-  height: 130px;
+.sponsors{
+  display: flex;
+  flex-wrap: wrap;
+
 }
+

@@ -20,9 +20,9 @@ footer {
 }
 
 .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(50px, 1fr));
-
+  display: flex;
+  flex-wrap: wrap;
+  
   .gallery-item {
     height: 50px;
     width: 50px;

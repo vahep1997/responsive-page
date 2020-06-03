@@ -15,6 +15,8 @@ import { TeamComponent } from './components/team/team.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     AppRoutingModule,
     CarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

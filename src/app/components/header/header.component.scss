@@ -3,12 +3,13 @@ header {
   height: 60px;
   width: 100%;
   z-index: 100;
+
   nav {
     padding: 0;
     box-shadow: 0 0 1px black;
 
-    ul {
-      height: 66px;
+    div ul {
+      height: 100%;
       display: flex;
       align-items: center;
 

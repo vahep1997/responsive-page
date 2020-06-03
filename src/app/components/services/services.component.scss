@@ -1,11 +1,11 @@
 .service-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
 
   .service-item {
     display: flex;
     width: 350px;
-    height: 150px;
+    margin-bottom: 50px;
 
     fa-icon {
       font-size: 35px;
@@ -13,10 +13,6 @@
 
     .description {
       margin-left: 20px;
-
-      h4 {
-        font-weight: bold;
-      }
     }
   }
 }
