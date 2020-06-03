@@ -1,11 +1,11 @@
 <header class="position-fixed">
     <nav class="navbar navbar-light bg-light justify-content-around font-weight-bold h-100">
-      <div class="d-flex justify-content-around align-items-center w-100">
+      <div class="d-flex justify-content-around align-items-center w-100 h-100">
         <a class="navbar-brand d-flex align-items-center logo-title sky-color">
           <img src="assets\images\logo.png" class="d-inline-block align-top" alt="logo">
           Example
         </a>
-        <ul *ngIf="responsiveLayout.mobileVersion" class="nav justify-content-end fs-14 nav-buttons">
+        <ul *ngIf="!responsiveLayout.mobileVersion" class="nav justify-content-end fs-14 nav-buttons">
           <li class="nav-item pointer h-100 bg-sky-color text-white">
             <a class="nav-link active">Home</a>
           </li>
@@ -25,6 +25,17 @@
             <a class="nav-link">Contact Us</a>
           </li>
         </ul>
+        <div *ngIf="responsiveLayout.mobileVersion" class="dropdown" dropdown>
+          <div class="user-info" dropdownToggle id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="user-color">
+              <fa-icon [icon]="faBars" class="fs-24"></fa-icon>
+            </div>
+          </div>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right pointer" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-item" *ngFor="let item of menu">{{item}}</div>
+          </div>
+        </div>
       </div>
     </nav>
 </header>

@@ -1,10 +1,32 @@
 <div class="bg-color py-4">
   <div class="container main">
     <div class="row">
-      <h2 class="font-weight-bold text-uppercase">Portfolio</h2>
-      <ul class="nav justify-content-end fs-14 ml-auto mt-3 align-items-end">
+      <h2 class="font-weight-bold text-uppercase">
+        Portfolio
+        <div class="underline"></div>
+      </h2>
+      <div *ngIf="responsiveLayout.mobileVersion" class="dropdown justify-content-end ml-auto mt-3 align-items-end" dropdown>
+        <div class="user-info" dropdownToggle id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <div class="user-color">
+            <button class="btn bg-sky-color text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </button>
+          </div>
+        </div>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right pointer" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-item">All</div>
+          <div class="dropdown-item">Buisness</div>
+          <div class="dropdown-item">Creative</div>
+          <div class="dropdown-item">Education</div>
+          <div class="dropdown-item">Blog</div>
+          <div class="dropdown-item">Free</div>
+          <div class="dropdown-item">More</div>
+        </div>
+      </div>
+      <ul *ngIf="!responsiveLayout.mobileVersion" class="nav justify-content-end fs-14 ml-auto mt-3 align-items-end">
         <li class="nav-item pointer">
-          <button class="portfolio-button btn">All</button>
+          <button class="btn bg-sky-color text-white fs-13">All</button>
         </li>
         <li class="nav-item pointer">
           <button class="portfolio-button btn">Buisness</button>

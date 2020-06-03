@@ -1,3 +1,4 @@
+import { ResponsiveLayoutService } from './../../services/responsive-layout.service';
 import { Component, OnInit } from '@angular/core';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +11,7 @@ export class PortfolioComponent implements OnInit {
 
   public faLightbulb = faLightbulb;
 
-  constructor() { }
+  constructor(public responsiveLayout: ResponsiveLayoutService) { }
 
   ngOnInit(): void {
   }
