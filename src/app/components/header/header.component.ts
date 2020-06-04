@@ -21,7 +21,6 @@ export class HeaderComponent implements OnInit {
           this.responsiveLayout.mobileVersion = true;
         }
       });
-      console.log(this.responsiveLayout.mobileVersion);
     };
   }
 

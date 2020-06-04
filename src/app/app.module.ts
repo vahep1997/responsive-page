@@ -17,6 +17,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { FooterComponent } from './components/footer/footer.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FullPageComponent } from './components/full-page/full-page.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StoriesComponent,
     ContactUsComponent,
     FooterComponent,
+    FullPageComponent,
   ],
   imports: [
     BrowserModule,
