@@ -10,7 +10,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 export class FullPageComponent implements OnInit {
 
   public faBars = faBars;
-  public menu = ['Home', 'Description', 'Services', 'Works', 'Stories', 'Contact Us', 'About Us'];
+  public menu = ['Home', 'Description', 'Services', 'Portfolio', 'Works', 'Stories', 'Contact Us', 'About Us'];
   public selectedMenu = this.menu[0];
 
   @ViewChild('header', { static: true }) header: ElementRef;
