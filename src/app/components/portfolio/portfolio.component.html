@@ -15,46 +15,22 @@
           </div>
         </div>
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right pointer" aria-labelledby="dropdownMenuButton">
-          <div class="dropdown-item">All</div>
-          <div class="dropdown-item">Buisness</div>
-          <div class="dropdown-item">Creative</div>
-          <div class="dropdown-item">Education</div>
-          <div class="dropdown-item">Blog</div>
-          <div class="dropdown-item">Free</div>
-          <div class="dropdown-item">More</div>
+          <div class="dropdown-item" *ngFor="let category of categories" (click)="changeCategory(category)">{{category}}</div>
+
         </div>
       </div>
       <ul *ngIf="!responsiveLayout.mobileVersion" class="nav justify-content-end fs-14 ml-auto mt-3 align-items-end">
-        <li class="nav-item pointer">
-          <button class="btn bg-sky-color text-white fs-13">All</button>
-        </li>
-        <li class="nav-item pointer">
-          <button class="portfolio-button btn">Buisness</button>
-        </li>
-        <li class="nav-item pointer">
-          <button class="portfolio-button btn">Creative</button>
-        </li>
-        <li class="nav-item pointer">
-          <button class="portfolio-button btn">Education</button>
-        </li>
-        <li class="nav-item pointer">
-          <button class="portfolio-button btn">Blog</button>
-        </li>
-        <li class="nav-item pointer">
-          <button class="portfolio-button btn">Free</button>
-        </li>
-        <li class="nav-item pointer">
-          <button class="portfolio-button btn">More</button>
+        <li class="nav-item pointer" *ngFor="let category of categories" (click)="changeCategory(category)">
+          <button
+            class="btn"
+            [ngClass]="{'portfolio-button': selectedCategory !== category, 'active-portfolio-button': (selectedCategory === category) }">
+            {{category}}
+          </button>
         </li>
       </ul>
     </div>
     <div class="portfolio-container mt-4">
-      <img src="assets/images/portfolio-1.png" alt="" class="portfolio-item col-sm-6 col-lg-4">
-      <img src="assets/images/portfolio-2.png" alt="" class="portfolio-item col-sm-6 col-lg-4">
-      <img src="assets/images/portfolio-3.png" alt="" class="portfolio-item col-sm-6 col-lg-4">
-      <img src="assets/images/portfolio-4.png" alt="" class="portfolio-item col-sm-6 col-lg-4">
-      <img src="assets/images/portfolio-5.png" alt="" class="portfolio-item col-sm-6 col-lg-4">
-      <img src="assets/images/portfolio-6.png" alt="" class="portfolio-item col-sm-6 col-lg-4">
+      <img src="{{item.image}}" alt="{{item.image}}" class="portfolio-item col-sm-6 col-lg-4" *ngFor="let item of filteredPortfolio">
     </div>
 
     <button class="mx-auto my-5 d-block explore-more-btn bg-sky-color text-uppercase btn fs-14 font-weight-bold text-white">
