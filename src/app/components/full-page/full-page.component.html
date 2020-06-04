@@ -23,7 +23,7 @@
           </div>
         </div>
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right pointer" aria-labelledby="dropdownMenuButton">
-          <div class="dropdown-item" *ngFor="let item of menu">{{item}}</div>
+          <div class="dropdown-item" *ngFor="let item of menu" (click)="changeMenu(item)">{{item}}</div>
         </div>
       </div>
     </div>
